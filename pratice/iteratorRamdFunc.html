@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Something</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="hi">블라블라</div>
+    <script>
+        const calculator = {
+            plus: (a,b)=>a+b,minus:(a,b)=>a-b,mul:(a,b)=>a*b,div:(a,b)=>a/b
+        }
+        console.log(calculator.plus(3,4));
+        console.log(calculator.minus(3,4));
+        console.log(calculator.mul(3,4));
+        console.log(calculator.div(3,4));
+
+        // let some = document.getElementById("hi");
+        let some = document.querySelector("div");
+        console.log(some);
+        
+        some.innerHTML = "Hello World!!";
+        some.style.color = "red";
+        document.title = "hello DOM!!"
+    </script>
+    <script src="./index.js"></script>
+</body>
+</html>
