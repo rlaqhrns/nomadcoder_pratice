@@ -1,10 +1,21 @@
-function handleClick(){
-    if(some.style.color !== "blue"){
-        some.style.color = "blue";
-    }else{
-        some.style.color = "red";
-    }
+const hi = document.querySelector("#hi");
+
+const CLICKED_CLASS = "clicked";
+
+function handleClick() {
+    hi.classList.toggle(CLICKED_CLASS);
+    //     const hasClass = hi.classList.contains(CLICKED_CLASS);
+
+    //     if(!hasClass){
+    //         hi.classList.add(CLICKED_CLASS);
+    //     } else{
+    //         hi.classList.remove(CLICKED_CLASS);
+    //     }
 }
 
-some.addEventListener("mouseenter", handleClick);
-//javascript DOM event MDN!!
+function init() {
+    hi.addEventListener("click", handleClick);
+}
+
+init();
+
