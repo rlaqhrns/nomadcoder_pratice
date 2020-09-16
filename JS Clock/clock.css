@@ -1,0 +1,17 @@
+body{
+    background-image: url(../img/morningsun.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.js-title{
+    color: white;
+    font-size:60px;
+    text-shadow: 1px 3px black;
+}
+.form,
+.greetings{
+    display: none;
+}
+.showing{
+    display: block;
+}
